@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="En">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>مهندسی نت</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../../plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="../../plugins/iCheck/flat/blue.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <!-- bootstrap rtl -->
+    <link rel="stylesheet" href="../../dist/css/bootstrap-rtl.min.css">
+    <!-- template rtl version -->
+    <link rel="stylesheet" href="../../dist/css/custom-style.css">
+
+    <!--*******************************************-->
+    <!-- For this page -->
+
+    <!-- Persian Data Picker -->
+    <link rel="stylesheet" href="../../dist/css/persian-datepicker.min.css">
+
+
+
+    <!-- (MULTIPLE SELECT)   -->
+    <link rel="stylesheet" href="../../plugins/multipleSelect/multiple-select.min.css">
+    <link rel="stylesheet" href="../../plugins/multipleSelect/multipleSelect-bootstrap.css">
+
+
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+
+    <!-- Navbar -->
+   
+
+
+
+    <!-- Main Sidebar Container -->
+   
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+
+        <!-- Main content -->
+        <section class="content">
+            <div class="row">
+                <div class="col-12">
+
+
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">ایجاد پرسنل جدید</h3>
+                        </div>
+                        <!-- /.card-header -->
+                        <div class="card-body ">
+
+                            <form action=""  >
+
+                                <div class="row">
+                                    <div class="form-group  col-md-6">
+                                        <label for="IDInputName">نام</label>
+                                        <input type="text" class="form-control" id="IDInputName" name="nameInput" aria-describedby="nameHelp" placeholder="نام خود را وارد کنید">
+                                        <small id="nameHelp" class="form-text text-muted"></small>
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label for="IDInputLastname">نام خانوادگی</label>
+                                        <input type="text" class="form-control" id="IDInputLastname" name="lastnameInput" aria-describedby="lastnameHelp" placeholder="نام خانوادگی خود را وارد کنید">
+                                        <small id="lastnameHelp" class="form-text text-muted"></small>
+                                    </div>
+
+
+                                    <div class="form-group col-md-6">
+                                        <label for="IDTelNumber">شماره تلفن همراه</label>
+                                        <input type="number" class="form-control" id="IDTelNumber" name="telInput" aria-describedby="telHelp" >
+                                        <small id="telHelp" class="form-text text-muted"></small>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="IDEmail">ایمیل</label>
+                                        <input type="email" class="form-control" id="IDEmail" name="emailInput" aria-describedby="emailHelp" placeholder="ایمیل خود را وارد کنید">
+                                        <small id="emailHelp" class="form-text text-muted"></small>
+                                    </div>
+
+
+
+
+
+                                    <div class="form-group col-12 ">
+                                        <label for="IDKhadamatMashmool" class="  px-2 pt-0 font-weight-bold row">
+                                            خدمات ارئه دهنده
+                                        </label>
+
+                                        <select class="multiple-select custom-select border-0 p-0 m-0 bg-transparent " multiple
+                                                id="IDKhadamatMashmool" data-select-all="true" data-minimum-count-selected="50" data-filter="true"
+                                                data-multiple-width="80" data-display-delimiter= " | "  data-filter-placeholder="از اینجا جستجو کنید"
+                                                data-group="false" data-animate="fade">
+                                            <optgroup label="مو">
+                                                <option value="1">یبیب</option>option
+                                                <option value="2">رنگ مو</option>
+                                                <option value="3">هایلایت</option>
+                                                <option value="4">کوتاهی مو</option>
+                                                <option value="5">کراتینه</option>
+                                            </optgroup>
+                                            <optgroup label="صورت">
+                                                <option value="6">میک آپ</option>
+                                                <option value="7">یییی</option>
+                                                <option value="8">اااااا</option>
+                                                <option value="9">تتتتت</option>
+                                                <option value="10">ننننن</option>
+
+                                            </optgroup>
+
+                                        </select>
+
+                                        <button type="button" id="getSelectsBtn" class="btn btn-sm btn-secondary small my-2 " data-toggle="modal" data-target="#exampleModalCenter">نمایش انتخاب شده ها </button>
+                                    </div>
+
+                                    <div class="">
+
+                                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header mx-auto">
+                                                        <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                        <h5 class="modal-title " id="exampleModalLongTitle">خدمات انتخاب شده</h5>
+
+                                                    </div>
+
+                                                    <div class="modal-body">
+                                                        <p class="text-right text-justify" id="IDselectedServices">444</p>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+                                </div>
+
+                                <div class="text-center mt-5 mb-2">
+                                    <input type="submit" class="btn btn-success text-center " value="ثبت پرسنل جدید">
+                                </div>
+
+                            </form>
+
+                        </div>
+                        <!-- /.card-body -->
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+    $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Slimscroll -->
+<script src="../../plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="../../plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="../../dist/js/pages/dashboard.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
+
+<!--********************************************************************************************************-->
+<!--for this page-->
+<!-- Persian Data Picker -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+<script src="https://unpkg.com/persian-date@latest/dist/persian-date.min.js"></script>
+<script src="https://unpkg.com/persian-datepicker@latest/dist/js/persian-datepicker.min.js"></script>
+
+
+<!-- (MULTIPLE SELECT) -->
+<script src="../../plugins/multipleSelect/multiple-select.min.js"></script>
+
+
+<script>
+
+
+
+
+
+
+
+    $(document).ready(function() {
+        $(".example1").pDatepicker({
+            initialValueType: "gregorian",
+            format: "YYYY/MM/DD",
+            onSelect: "year"
+        });
+    });
+
+    $('.multiple-select').multipleSelect({
+
+        placeholder: "از اینجا انتخاب کنید ",
+        formatSelectAll: function () {
+            return 'انتخاب همه'
+        },
+        formatAllSelected: function () {
+            return 'همه موارد انتخاب شده اند'
+        },
+        filterGroup: true,
+
+    });
+
+    // set text from multiple select selected items into BS4 MODAL TO SHOW selected items
+    $('#getSelectsBtn').click(function () {
+        document.getElementById("IDselectedServices").innerText ="خدمات انتخاب شده: \n"   + $('#IDKhadamatMashmool').multipleSelect('getSelects', 'text');
+    })
+
+
+</script>
+
+</body>
+</html>

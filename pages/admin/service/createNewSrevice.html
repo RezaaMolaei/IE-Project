@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>مهندسی نت</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../plugins/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="../../plugins/iCheck/flat/blue.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+  <!-- bootstrap rtl -->
+  <link rel="stylesheet" href="../../dist/css/bootstrap-rtl.min.css">
+  <!-- template rtl version -->
+  <link rel="stylesheet" href="../../dist/css/custom-style.css">
+
+  <!--*******************************************-->
+  <!-- For this page -->
+  <!-- daterange picker -->
+  <link rel="stylesheet" href="../../plugins/daterangepicker/daterangepicker-bs3.css">
+  <!-- Bootstrap time Picker -->
+  <link rel="stylesheet" href="../../plugins/timepicker/bootstrap-timepicker.min.css">
+  <!-- Persian Data Picker -->
+  <link rel="stylesheet" href="../../dist/css/persian-datepicker.min.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/persian-datepicker@latest/dist/css/persian-datepicker.min.css"/>
+  
+  
+  <!-- DataTables for table features-->
+  <link rel="stylesheet" href="../../plugins/datatables/dataTables.bootstrap4.css">
+
+
+  <!-- select menu searchable -->
+  <link rel="stylesheet" href="../../plugins/select2/select2.min.css">
+
+  
+
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+
+  <!-- Navbar -->
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-12">
+
+
+            <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">ایجاد خدمت جدید</h3>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body ">
+                  
+                    <form action=""  >
+
+                      <div class="row">
+                          <div class="form-group  col-md-6">
+                            <label for="IDOnvaneKhedmat">عنوان خدمت</label>
+                            <input type="text" class="form-control" id="IDOnvaneKhedmat" name="OnvaneKhedmatInput" aria-describedby="nameHelp" placeholder="نام خود را وارد کنید">
+                            <small id="nameHelp" class="form-text text-muted"></small>
+                          </div>
+
+                          <div class="form-group col-md-6 ">
+                            <label for="khadamatSelect">عنوان شاخه خدمت</label>
+                              <select class=" select2 " name="" id="khadamatSelect" " >
+                                <option selected disabled class="text-muted">از اینجا انتخاب کنید</option>
+                                  <option value="baft">بافت</option>
+                                  <option value="rangMoo">رنگ مو</option>
+                                  <option value="Kasht">کاشت</option>
+                                  <option value="Arayesh">آرایش</option>
+                              </select>
+                          </div>
+
+                          <div class="form-group col-md-6 ">
+                            <label for="IDZamanHodoodiSelect">زمان حدودی(دقیقه)</label>
+                              <select class=" select2 " name="" id="IDZamanHodoodiSelect" data-number-target="fa" >
+                                  <option selected disabled class="text-muted">از اینجا انتخاب کنید</option>
+                                  <option value="30">30</option>
+                                  <option value="60">60</option>
+                                  <option value="90">90</option>
+                                  <option value="120">120</option>
+                              </select>
+                              </div>
+
+                          
+                              <div class="form-group mb-3 col-md-6 ">
+                                <label for="inputGroupFile">آپلود تصاویر</label>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="inputGroupFile02" multiple>
+                                    <label class="custom-file-label " for="inputGroupFile">آپلود فایل</label>
+                                </div>
+                                
+                             </div>
+
+
+
+                             <div class="form-group col-md-6">
+                              <label>هزینه (تومان)</label>
+                              <div class="input-group">
+                                <input type="number" class="form-control" name="hazine" id="IDHazine">
+                                <div class="input-group-append">
+                                  <div class="input-group-text" id="btnGroupAddon2">
+                                  تومان             
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="form-group col-md-6 ">
+                              <label for="IDOnvanAfradEraeDahande">افراد ارائه دهنده</label>
+                                <select class=" select2 " name="OnvanAfradEraeDahande" id="IDOnvanAfradEraeDahande" data-placeholder="افراد را از اینجا انتخاب کنید" multiple>
+                                  <option  disabled class="text-muted">افراد از اینجا انتخاب کنید</option>
+                                    <option value="ali">علی نقوی</option>
+                                    <option value="mohammad">محمد علوی</option>
+                                    <option value="ali">علی انتصاری</option>
+                                    <option value="reza">رضا غلامی</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                              <label>درصد پیش‌پرداخت</label>
+                              <div class="input-group">
+                                <input type="number" class="form-control" name="darsadPishpardakht" id="IDdarsadPishpardakht" min="0" max="100">
+                                <div class="input-group-append">
+                                  <div class="input-group-text" id="btnGroupAddon2">
+                                  درصد             
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label>مدت زمان تمدید دوره(روز)</label>
+                              <div class="input-group">
+                                <input type="number" class="form-control" name="ModatTamdid" id="IDModatTamdid" aria-describedby="tamdidHelp" min="0" max="100">
+                                <div class="input-group-append">
+                                  <div class="input-group-text" id="btnGroupAddon2">
+                                  روز            
+                                  </div>
+                                </div>
+                              </div>
+                              <small id="tamdidHelp" class="form-text text-muted">برای آن دسته از خدماتی که  بعد از مدت‌زمان خاصی نیاز به چک‌کردن، تمدید،ترمیم و... دارند.</small>
+
+                            </div>
+                            
+                            
+
+                          
+
+
+                             </div>
+                              <div class="d-flex justify-content-center mt-5 mb-2 text-center">
+                                <input type="submit" class="btn btn-success text-center " value="ثبت خدمت جدید">
+                              </div>
+
+                            
+                        
+                    </form>
+
+                </div>
+                <!-- /.card-body -->
+            </div>
+
+
+        </div>
+      </div>
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <strong class="mx-auto">کلیه‌ی حقوق این وب‌سایت متعلق به شرکت <a href="http://">ریواس سیستم</a> می‌باشد. &copy; 2021.</strong>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Slimscroll -->
+<script src="../../plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="../../plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="../../dist/js/pages/dashboard.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
+
+
+<!-- persian number use -->
+<script src="../../plugins/persianNumber/ChangeNumbers.min.js"></script>
+
+<!--********************************************************************************************************-->
+<!--for this page-->
+<!-- date-range-picker -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
+<script src="../../plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Persian Data Picker -->
+<!-- Persian Data Picker -->
+<script src="../../dist/js/persian-date.min.js"></script>
+<script src="../../dist/js/persian-datepicker.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+  <script src="https://unpkg.com/persian-date@latest/dist/persian-date.min.js"></script>
+  <script src="https://unpkg.com/persian-datepicker@latest/dist/js/persian-datepicker.min.js"></script>
+
+
+<!-- DataTables -->
+<script src="../../plugins/datatables/jquery.dataTables.js"></script>
+<script src="../../plugins/datatables/dataTables.bootstrap4.js"></script>
+
+<!-- select menu searchable -->
+<script src="../../plugins/select2/select2.full.min.js"></script>
+
+
+  <script> 
+
+    
+
+
+    $('#inputGroupFile02').on('change',function(){
+                //get the file name
+                var fileName = $(this).val();
+                //replace the "Choose a file" label
+                $(this).next('.custom-file-label').html(fileName);
+            })
+
+
+    $(document).ready(function() {
+      $(".example1").pDatepicker({
+        initialValueType: "gregorian",
+        format: "YYYY/MM/DD",
+        onSelect: "year"
+      });
+      });
+
+      $(function () {
+      $('.select2').select2()
+        multiple:true
+      })
+
+    //for chek anabling
+      $(function () {
+        $("input[name='taahol']").click(function () {
+            if ($("#IDMarriedRadio").is(":checked")) {
+                $("#IDTarikhEzdevaj").removeAttr("disabled");
+                $("#IDTarikhEzdevaj").focus();
+            } else {
+                $("#IDTarikhEzdevaj").attr("disabled", "disabled");
+            }
+        });
+    });
+
+    $(function () {
+        $("input[name='farzand']").click(function () {
+            if ($("#IDFarzandYesRadio").is(":checked")) {
+                $("#IDtarikhTavallodFarzand1").removeAttr("disabled");
+                $("#IDtarikhTavallodFarzand1").focus();
+                $("#newFarzandBtn").removeAttr("disabled");
+
+            } else {
+                $("#newFarzandBtn").attr("disabled", "disabled");
+                $("#IDtarikhTavallodFarzand1").attr("disabled", "disabled");
+            }
+        });
+    });
+
+
+
+    //for add new farzand
+    document.getElementById("newFarzandBtn").onclick = function() {
+    var container = document.getElementById("farzand-section");
+    var section = document.getElementById("farzandTarikhInput");
+
+    
+    container.appendChild(section.cloneNode(true));
+     
+  
+}
+
+
+
+
+
+  
+</script>
+
+</body>
+</html>

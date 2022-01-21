@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>پنل مدیریت | داشبورد اول</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../../plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="../../plugins/iCheck/flat/blue.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    
+    <!-- bootstrap rtl -->
+    <link rel="stylesheet" href="../../dist/css/bootstrap-rtl.min.css">
+    <!-- template rtl version -->
+    <link rel="stylesheet" href="../../dist/css/custom-style.css">
+    
+    <!--*******************************************-->
+    <!-- For this page -->
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    
+    <!-- fullCalendar css -->
+    <link rel="stylesheet" href="../../plugins/FullCalandar/cupertino/jquery-ui.min.css">
+    
+    <link rel="stylesheet" href="../../plugins/FullCalandar/fullcalendar.min.css">
+    
+    <style>
+        .fc-today {
+            background: rgba(182, 255, 219, 0.5) !important;
+            border: none !important;
+            border-top: 1px solid #ddd !important;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+    
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand bg-white navbar-light border-bottom ">
+        <!-- Left navbar links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+                <a href="index3.html" class="nav-link">خانه</a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+                <a href="#" class="nav-link">تماس</a>
+            </li>
+        </ul>
+        
+        <!-- SEARCH FORM -->
+        
+        
+        <!-- Right navbar links -->
+        <ul class="navbar-nav mr-auto">
+            <!-- Messages Dropdown Menu -->
+            <li class="nav-item dropdown">
+                <a class="nav-link" data-toggle="dropdown" href="#">
+                    <i class="fa fa-comments-o"></i>
+                    <span class="badge badge-danger navbar-badge">3</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-left">
+                    <a href="#" class="dropdown-item">
+                        <!-- Message Start -->
+                        <div class="media">
+                            <img src="../../dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 ml-3 img-circle">
+                            <div class="media-body">
+                                <h3 class="dropdown-item-title">
+                                    حسام موسوی
+                                    <span class="float-left text-sm text-danger"><i class="fa fa-star"></i></span>
+                                </h3>
+                                <p class="text-sm">با من تماس بگیر لطفا...</p>
+                                <p class="text-sm text-muted"><i class="fa fa-clock-o mr-1"></i> 4 ساعت قبل</p>
+                            </div>
+                        </div>
+                        <!-- Message End -->
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">
+                        <!-- Message Start -->
+                        <div class="media">
+                            <img src="../../dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle ml-3">
+                            <div class="media-body">
+                                <h3 class="dropdown-item-title">
+                                    پیمان احمدی
+                                    <span class="float-left text-sm text-muted"><i class="fa fa-star"></i></span>
+                                </h3>
+                                <p class="text-sm">من پیامتو دریافت کردم</p>
+                                <p class="text-sm text-muted"><i class="fa fa-clock-o mr-1"></i> 4 ساعت قبل</p>
+                            </div>
+                        </div>
+                        <!-- Message End -->
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">
+                        <!-- Message Start -->
+                        <div class="media">
+                            <img src="../../dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle ml-3">
+                            <div class="media-body">
+                                <h3 class="dropdown-item-title">
+                                    سارا وکیلی
+                                    <span class="float-left text-sm text-warning"><i class="fa fa-star"></i></span>
+                                </h3>
+                                <p class="text-sm">پروژه اتون عالی بود مرسی واقعا</p>
+                                <p class="text-sm text-muted"><i class="fa fa-clock-o mr-1"></i>4 ساعت قبل</p>
+                            </div>
+                        </div>
+                        <!-- Message End -->
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item dropdown-footer">مشاهده همه پیام‌ها</a>
+                </div>
+            </li>
+            <!-- Notifications Dropdown Menu -->
+            <li class="nav-item dropdown">
+                <a class="nav-link" data-toggle="dropdown" href="#">
+                    <i class="fa fa-bell-o"></i>
+                    <span class="badge badge-warning navbar-badge">15</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-left">
+                    <span class="dropdown-item dropdown-header">15 نوتیفیکیشن</span>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">
+                        <i class="fa fa-envelope ml-2"></i> 4 پیام جدید
+                        <span class="float-left text-muted text-sm">3 دقیقه</span>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">
+                        <i class="fa fa-users ml-2"></i> 8 درخواست دوستی
+                        <span class="float-left text-muted text-sm">12 ساعت</span>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">
+                        <i class="fa fa-file ml-2"></i> 3 گزارش جدید
+                        <span class="float-left text-muted text-sm">2 روز</span>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item dropdown-footer">مشاهده همه نوتیفیکیشن</a>
+                </div>
+            </li>
+        
+        </ul>
+    </nav>
+    <!-- /.navbar -->
+    
+    
+    
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <!-- Brand Logo -->
+        <a href="index3.html" class="brand-link">
+            <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+                 style="opacity: .8">
+            <span class="brand-text font-weight-light">پنل مدیریت</span>
+        </a>
+        
+        <!-- Sidebar -->
+        <div class="sidebar" style="direction: ltr">
+            <div style="direction: rtl">
+                <!-- Sidebar user panel (optional) -->
+                <div class="user-panel mt-2 pb-2 mb-1 d-flex">
+                    <div class="image">
+                        <img src="https://www.gravatar.com/avatar/52f0fbcbedee04a121cba8dad1174462" class="img-circle elevation-2 fa fa-user" alt="User Image">
+                    </div>
+                    <div class="info">
+                        <a href="#" class="d-block">ریواس سیستم</a>
+                    </div>
+                </div>
+                
+                <!-- Sidebar Menu -->
+                <nav class="mt-2 small">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+                             with font-awesome or any other icon font library -->
+                        
+                        <li class="nav-item has-treeview ">
+                            <a href="#" class="nav-link  ml-4 pr-2">
+                                <i class="nav-icon fa fa-home"></i>
+                                <p>
+                                    داشبورد
+                                </p>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item has-treeview ">
+                            <a href="#" class="nav-link  ml-4 pr-2">
+                                <i class="nav-icon fa fa-suitcase"></i>
+                                <p>
+                                    خدمات
+                                    <i class="right fa fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item pr-4 ">
+                                    <a href="./index.html" class="nav-link  ml-4">
+                                        <i class="fa fa-circle  " ></i>
+                                        <p class="">شاخه خدمت</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item pr-4">
+                                    <a href="./index2.html" class="nav-link ml-4">
+                                        <i class="fa fa-circle "></i>
+                                        <p>خدمات</p>
+                                    </a>
+                                </li>
+                            
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item has-treeview ">
+                            <a href="#" class="nav-link  ml-4 pr-2">
+                                <i class="nav-icon fa fa-calendar"></i>
+                                <p>
+                                    تقویم کاری
+                                    <i class="right fa fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item pr-4 ">
+                                    <a href="./index.html" class="nav-link ml-4">
+                                        <i class="fa fa-circle  " ></i>
+                                        <p class="">برنامه هفتگی</p>
+                                    </a>
+                                </li>
+                            
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item has-treeview ">
+                            <a href="#" class="nav-link  ml-4 p-2">
+                                <i class="nav-icon fa fa-calendar-check-o"></i>
+                                <p>
+                                    مناسبت ها
+                                    <i class="right fa fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item pr-4 ">
+                                    <a href="./index.html" class="nav-link ml-4 ">
+                                        <i class="fa fa-circle  " ></i>
+                                        <p class="">لیست مناسبت ها</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item pr-4">
+                                    <a href="./index2.html" class="nav-link small ml-4">
+                                        <i class="fa fa-circle "></i>
+                                        <p>ایجاد مناسبت‌ِخاص جدید</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item pr-4">
+                                    <a href="./index2.html" class="nav-link small ml-4">
+                                        <i class="fa fa-circle "></i>
+                                        <p>ایجاد مناسبت‌ِعمومی جدید</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        
+                        <li class="nav-item has-treeview  ">
+                            <a href="#" class="nav-link ml-4 pr-2">
+                                <i class="nav-icon fa fa-ticket"></i>
+                                <p>
+                                    تیکتینگ
+                                    <i class="right fa fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item pr-4 ">
+                                    <a href="./index.html" class="nav-link small ml-4 ">
+                                        <i class="fa fa-circle  " ></i>
+                                        <p class="">درخواست‌های خوانده‌شده</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item pr-4">
+                                    <a href="./index2.html" class="nav-link ml-4">
+                                        <i class="fa fa-circle "></i>
+                                        <p>درخواست جدید</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item has-treeview  ">
+                            <a href="#" class="nav-link  ml-4 pr-2">
+                                <i class="nav-icon fa fa-credit-card"></i>
+                                <p>
+                                    کوپن تخفیف
+                                    <i class="right fa fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item pr-4 ">
+                                    <a href="./index.html" class="nav-link ml-4 ">
+                                        <i class="fa fa-circle  " ></i>
+                                        <p class="">کوپن‌های فردی</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item pr-4">
+                                    <a href="./index2.html" class="nav-link ml-4">
+                                        <i class="fa fa-circle "></i>
+                                        <p>کوپن‌های جمعی</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item has-treeview ">
+                            <a href="#" class="nav-link  ml-4 pr-2">
+                                <i class="nav-icon fa fa-list-ul"></i>
+                                <p>
+                                    سفارشات
+                                    <i class="right fa fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item pr-4 ">
+                                    <a href="./index.html" class="nav-link ml-4 small ">
+                                        <i class="fa fa-circle  " ></i>
+                                        <p class=" text-break"> درخواست‌های ارسال شده</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item has-treeview  ">
+                            <a href="#" class="nav-link  ml-4 pr-2">
+                                <i class="nav-icon fa fa-user-o"></i>
+                                <p>
+                                    کاربران
+                                    <i class="right fa fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item pr-4 ">
+                                    <a href="" class="nav-link ml-4 active">
+                                        <i class="fa fa-circle  " ></i>
+                                        <p class="">لیست کاربران</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item pr-4">
+                                    <a href="./index2.html" class="nav-link ml-4">
+                                        <i class="fa fa-circle "></i>
+                                        <p>ایجاد کاربر جدید</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item has-treeview ">
+                            <a href="#" class="nav-link  ml-4 pr-2">
+                                <i class="nav-icon fa fa-suitcase"></i>
+                                <p>
+                                    پروفایل همکار
+                                    <i class="right fa fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item pr-4 ">
+                                    <a href="./index.html" class="nav-link ml-4 ">
+                                        <i class="fa fa-circle  " ></i>
+                                        <p class="">لیست همکاران</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item pr-4">
+                                    <a href="./index2.html" class="nav-link ml-4">
+                                        <i class="fa fa-circle "></i>
+                                        <p>ایجاد همکار جدید</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item has-treeview  ">
+                            <a href="#" class="nav-link  ml-4 pr-2">
+                                <i class="nav-icon fa fa-line-chart"></i>
+                                <p>
+                                    گزارشات
+                                    <i class="right fa fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item pr-4 ">
+                                    <a href="./index.html" class="nav-link ml-4 ">
+                                        <i class="fa fa-circle  " ></i>
+                                        <p class="">لیست واریزی‌ها</p>
+                                    </a>
+                                </li>
+                            
+                            </ul>
+                        </li>
+                        
+                        
+                        <li class="nav-item has-treeview  ">
+                            <a href="#" class="nav-link  ml-4 small pr-2">
+                                <i class="nav-icon fa fa-id-card"></i>
+                                <p>
+                                    پروفایل ارائه‌دهنده خدمت
+                                    <i class="right fa fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item pr-4 ">
+                                    <a href="./index.html" class="nav-link ml-4 ">
+                                        <i class="fa fa-circle  " ></i>
+                                        <p class="">لیست ارائه‌دهندگان</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item pr-4">
+                                    <a href="./index2.html" class="nav-link ml-4">
+                                        <i class="fa fa-circle "></i>
+                                        <p>ایجاد ارائه‌دهنده</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item has-treeview  ">
+                            <a href="#" class="nav-link  ml-4 pr-2">
+                                <i class="nav-icon fa fa-bullhorn"></i>
+                                <p>
+                                    اطلاع‌رسانی‌ها
+                                    <i class="right fa fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item pr-4 ">
+                                    <a href="./index.html" class="nav-link ml-4 ">
+                                        <i class="fa fa-circle  " ></i>
+                                        <p class="">گزارش‌اطلاع‌رسانی‌ها</p>
+                                    </a>
+                                </li>
+                            
+                            </ul>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item has-treeview  ">
+                            <a href="#" class="nav-link  ml-4 pr-2">
+                                <i class="nav-icon fa fa-cogs"></i>
+                                <p>
+                                    تنظیمات
+                                    <i class="right fa fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item pr-4 ">
+                                    <a href="./index.html" class="nav-link ml-4 ">
+                                        <i class="fa fa-circle  " ></i>
+                                        <p class="">پروفایل ادمین</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item pr-4">
+                                    <a href="./index2.html" class="nav-link ml-4">
+                                        <i class="fa fa-circle "></i>
+                                        <p>پیام ها</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item pr-4">
+                                    <a href="./index2.html" class="nav-link ml-4">
+                                        <i class="fa fa-circle "></i>
+                                        <p>یادآوری رزرواسیون</p>
+                                    </a>
+                                </li>
+                            
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item has-treeview  ">
+                            <a href="#" class="nav-link  ml-4 pr-2">
+                                <i class="nav-icon fa fa-headphones"></i>
+                                تماس با پشتیبانی
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item has-treeview  ">
+                            <a href="#" class="nav-link  ml-4 pr-2">
+                                <i class="nav-icon fa fa-sign-out"></i>
+                                خروج
+                            </a>
+                        </li>
+                    
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+        </div>
+        <!-- /.sidebar -->
+    </aside>
+    
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        
+        <!-- Main content -->
+        <section class="content">
+            <div class="row">
+                <div class="col-12">
+                
+                <div class="row">
+    
+                    <div class="col-12 col-md-6 col-xl-4 p-2 h-auto">
+                        <div class="card">
+                            <div class="card-header">
+                                <h6 class="">درآمد ماهیانه</h6>
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body ">
+                                <div class="chartBox">
+                                    <canvas id="IncomeChart" class="control-chart-size"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-md-6 col-xl-4 p-2 h-auto">
+                        <div class="card">
+                            <div class="card-header">
+                                <h6 class="">رزروهای ماهیانه</h6>
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body ">
+                                <div class="chartBox">
+                                    <canvas id="bookingChart" class="control-chart-size"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-12 col-md-6 col-xl-4 p-2 h-auto">
+                        <div class="card">
+                            <div class="card-header">
+                                <h6 class="">نسبت جنسیت مشتریان</h6>
+            
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body ">
+                                <div class="chartBox">
+                                    <canvas id="UsersChart" class="control-chart-size"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+    
+    
+    
+                    <div class="col-12">
+                        <div class="card ">
+                            <div class="card-header">
+                                <h3 class="card-title">لیست رزرو ها</h3>
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body ">
+                                
+                                <div id='calendar'></div>
+                            
+                            
+                            </div>
+                            <!-- /.card-body -->
+                        </div>
+                    </div>
+                </div>
+                
+                
+                </div>
+            </div>
+        </section>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+        <strong class="mx-auto">کلیه‌ی حقوق این وب‌سایت متعلق به شرکت <a href="http://">ریواس سیستم</a> می‌باشد. &copy; 2021.</strong>
+    </footer>
+    
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+    $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Slimscroll -->
+<script src="../../plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="../../plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="../../dist/js/pages/dashboard.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
+
+<!--********************************************************************************************************-->
+<!--for this page-->
+
+<!-- fullCalendar-->
+<script src="../../plugins/FullCalandar/moment.min.js"></script>
+<script src="../../plugins/FullCalandar/moment-jalaali.js"></script>
+
+<script src="../../plugins/FullCalandar/jquery.min.js"></script>
+<script src="../../plugins/FullCalandar/fullcalendar.min.js"></script>
+<script src="../../plugins/FullCalandar/lang/fa.js"></script>
+
+<!--CHARTjS-->
+<script src="../../dist/js/chartJS/chart.min.js"></script>
+
+<!-- page script -->
+<script>
+    
+    <!--    نمودار درآمد ماهیانه -->
+    const IncomeChart = document.getElementById('IncomeChart');
+    const IncomeChartFunc = new Chart(IncomeChart, {
+        type: 'line',
+        data: {
+            labels: ['فروردین', 'اردیبهشت', 'خرداد', 'تیر', 'مرداد','شهریور', 'مهر' , 'آبان','آذر'],
+            datasets: [
+                {
+                    label: 'درآمد ماه',
+                    data: [1256000, 3528000, 4258000, 7100000, 6895000, 1234500,2680000, 3645000, 5970000],
+                    backgroundColor: [
+                        'rgba(106,150,255,0.67)',
+                    
+                    ],
+                    borderColor: [
+                        'rgb(0,0,0)',
+                    
+                    ],
+                    borderWidth: 1,
+                }
+            ]
+        },
+        options: {
+            maintainAspectRatio: false,
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'top',
+                },
+            },
+        }
+    });
+    <!--    نمودار درآمد ماهیانه /. -->
+    
+    
+    <!--    نمودار رزرو ماهیانه -->
+    const bookingChart = document.getElementById('bookingChart');
+    const bookingChartFunc = new Chart(bookingChart, {
+        type: 'bar',
+        data: {
+            labels: ['فروردین', 'اردیبهشت', 'خرداد', 'تیر', 'مرداد','شهریور', 'مهر' , 'آبان','آذر'],
+            datasets: [
+                {
+                    label: 'تعداد رزرو ها',
+                    data: [1, 16, 5, 8, 9, 5,55, 59, 67],
+                    backgroundColor: [
+                        'rgba(106,150,255,0.67)',
+                    
+                    ],
+                    borderColor: [
+                        'rgb(0,0,0)',
+                    
+                    ],
+                    borderWidth: 1
+                }
+            ]
+        },
+        options: {
+            maintainAspectRatio: false,
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'top',
+                },
+            },
+        }
+    });
+<!--    نمودار رزرو ماهیانه /. -->
+
+<!--    نمودار جنسیت مشتریان -->
+const UsersChart = document.getElementById('UsersChart');
+const UsersChartFunc = new Chart(UsersChart, {
+    type:'doughnut',
+    data: {
+        labels: ['مرد', 'زن'],
+        datasets: [
+            {
+                label: 'تعداد رزرو ها',
+                data: [55, 45],
+                backgroundColor: [
+                    'rgb(255, 99, 132)',
+                    'rgb(54, 162, 235)',
+
+                ],
+                borderColor: [
+                    'rgb(255,252,252)',
+                
+                ],
+                borderWidth: 1,
+                hoverOffset: 4,
+            }
+        ]
+    },
+    options: {
+        maintainAspectRatio: false,
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'top',
+            },
+        },
+    }
+});
+<!--     نمودار جنسیت مشتریان /. -->
+
+
+
+
+$(document).ready(function() {
+        
+        $('#calendar').fullCalendar({
+            defaultView: 'agendaDay',
+            theme: true,
+            header: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'month,agendaWeek,agendaDay'
+            },
+            isJalaali : true,
+            isRTL : true,
+            lang: 'fa',
+            navLinks: true, // can click day/week names to navigate views
+            eventLimit: true, // allow "more" link when too many events
+            events: [
+                {
+                    title: 'نوبت پر کردن دندان',
+                    start: '2021-11-23T16:00:00'
+                },
+                {
+                    id: 999,
+                    title: 'Repeating Event',
+                    start: '2021-11-23T17:00:00'
+                },
+                {
+                    id: 999,
+                    title: 'Repeating Event',
+                    start: '2021-11-25T17:00:00'
+                },
+            ]
+        });
+    });
+
+
+</script>
+
+</body>
+</html>

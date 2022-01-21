@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>مهندسی نت</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../../plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="../../plugins/iCheck/flat/blue.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+    <!-- bootstrap rtl -->
+    <link rel="stylesheet" href="../../dist/css/bootstrap-rtl.min.css">
+    <!-- template rtl version -->
+    <link rel="stylesheet" href="../../dist/css/custom-style.css">
+
+    <!--*******************************************-->
+    <!-- For this page -->
+    <!-- DataTables for table features-->
+    <link rel="stylesheet" href="../../plugins/datatables/dataTables.bootstrap4.css">
+
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+
+    <!-- Navbar -->
+ 
+    <!-- /.navbar -->
+
+
+
+    <!-- Main Sidebar Container -->
+ 
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+
+        <!-- Main content -->
+        <section class="content">
+            <div class="row">
+                <div class="col-12">
+
+                    <div class="row p-2 m-0 ">
+                        <a href="" class="btn btn-success m-2 py-4 ">ایجاد ارائه دهنده</a>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">لیست ارائه دهندگان</h3>
+                        </div>
+                        <!-- /.card-header -->
+                        <div class="card-body ">
+                            <div class="table-responsive">
+                                <table id="example1" class="table table-hover table-sm table-bordered table-striped small text-center">
+                                    <thead class=" ">
+                                    <tr>
+                                        <th>ردیف</th>
+                                        <th>نام </th>
+                                        <th>شماره تماس</th>
+                                        <th>کد ملی</th>
+                                        <th>خدمات</th>
+                                        <th>ویرایش/حذف</th>
+
+                                    </tr>
+                                    </thead>
+                                    <tbody class="">
+                                    <tr>
+                                        <td>1</td>
+                                        <td>سیده سارا نظیری</td>
+                                        <td>09123456789</td>
+                                        <td>کارشناسی</td>
+                                        <td>خانم</td>
+                                        <td>1377/02/03</td>
+                                        <td>رنگ مو ، </td>
+                                        <td>دکتری</td>
+                                        <td >
+                                            <div class="d-flex flex-row justify-content-center ">
+                                                <a href="" class="btn btn-primary btn-sm mx-1" data-toggle="tooltip" data-placement="top" title="ویرایش"> <i class="fa fa-edit"></i></a>
+                                                <a href="" class="btn btn-danger btn-sm mx-1" data-toggle="tooltip" data-placement="top" title="حذف"> <i class="fa fa-trash"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>طه اصغری</td>
+                                        <td>0987654321</td>
+                                        <td>کارشناسی</td>
+                                        <td>آقا</td>
+                                        <td>1377/02/03</td>
+                                        <td>رنگ مو ، هایلایت و .... </td>
+                                        <td>کارشناسی ارشد</td>
+                                        <td >
+                                            <div class="d-flex flex-row justify-content-center ">
+                                                <a href="" class="btn btn-primary btn-sm mx-1" data-toggle="tooltip" data-placement="top" title="ویرایش"> <i class="fa fa-edit"></i></a>
+                                                <a href="" class="btn btn-danger btn-sm mx-1" data-toggle="tooltip" data-placement="top" title="حذف"> <i class="fa fa-trash"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>پیمان افشاری</td>
+                                        <td>09123456789</td>
+                                        <td>کارشناسی</td>
+                                        <td>آقا</td>
+                                        <td>1375/02/29</td>
+                                        <td>میک آپ</td>
+                                        <td>کارشناسی</td>
+                                        <td >
+                                            <div class="d-flex flex-row justify-content-center ">
+                                                <a href="" class="btn btn-primary btn-sm mx-1" data-toggle="tooltip" data-placement="top" title="ویرایش"> <i class="fa fa-edit"></i></a>
+                                                <a href="" class="btn btn-danger btn-sm mx-1" data-toggle="tooltip" data-placement="top" title="حذف"> <i class="fa fa-trash"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+
+                                    </tbody>
+
+                                </table>
+                            </div>
+                        </div>
+                        <!-- /.card-body -->
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+    $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Slimscroll -->
+<script src="../../plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="../../plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="../../dist/js/pages/dashboard.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
+
+<!--********************************************************************************************************-->
+<!--for this page-->
+
+<!-- DataTables -->
+<script src="../../plugins/datatables/jquery.dataTables.js"></script>
+<script src="../../plugins/datatables/dataTables.bootstrap4.js"></script>
+
+<!-- page script -->
+<script>
+    $(function () {
+        $("#example1").DataTable({
+            "language": {
+                "paginate": {
+
+                    "next": "بعدی",
+                    "previous" : "قبلی"
+                }
+            },
+            "info" : false,
+        });
+        $('#example2').DataTable({
+            "language": {
+                "paginate": {
+                    "next": "بعدی",
+                    "previous" : "قبلی"
+                }
+
+            },
+            "info" : false,
+            "paging": true,
+            "lengthChange": false,
+            "searching": false,
+            "ordering": true,
+            "autoWidth": false
+        });
+    });
+</script>
+
+</body>
+</html>
